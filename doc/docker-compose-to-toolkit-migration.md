@@ -53,7 +53,8 @@ environment:
     …
 ```
 
-Each of these variables should be copied, with several exceptions we’ll list later, into the Toolkit’s **config/variables.env** file, ensuring the following form (note the use of `=` instead of `:`):
+Each of these variables should be copied, with several exceptions we’ll list later,
+into the Toolkit’s **config/variables.env** file, ensuring the following form (note the use of `=` instead of `:`):
 
 ```
 SHARELATEX_APP_NAME=Overleaf Community Edition
@@ -63,7 +64,8 @@ SHARELATEX_PROXY_LEARN=true
 As mentioned above, there are several exceptions, as certain features are configured differently when using the Toolkit:
 
 - Variables starting with `SANDBOXED_COMPILES_` and `DOCKER_RUNNER` are no longer needed. To enable [Sandboxed Compiles](./sandboxed-compiles.md), set `SIBLING_CONTAINERS_ENABLED=true` in your **config/overleaf.rc** file.
-- Variables starting with `SHARELATEX_MONGO_`, `SHARELATEX_REDIS_` and the `REDIS_HOST` variable are no longer needed. MongoDB and Redis are now configured in the **config/overleaf.rc** file using  `MONGO_URL`, `REDIS_HOST` and `REDIS_PORT`.
+- Variables starting with `SHARELATEX_MONGO_`, `SHARELATEX_REDIS_` and the `REDIS_HOST` variable are no longer needed.
+- MongoDB and Redis are now configured in the **config/overleaf.rc** file using  `MONGO_URL`, `REDIS_HOST` and `REDIS_PORT`.
 
 For advanced configuration options, refer to the [overleaf.rc](./overleaf-rc.md) documentation.
 

@@ -1,6 +1,7 @@
 # LDAP
 
-Available in Overleaf Server Pro is the ability to use a LDAP server to manage users. It is also possible to use with Active Directory systems. 
+Available in Overleaf Server Pro is the ability to use a LDAP server to manage users. 
+It is also possible to use with Active Directory systems. 
 
 LDAP is configured in the Toolkit via [`variables.env`](./configuration.md).
 
