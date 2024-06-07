@@ -116,7 +116,7 @@ function set_mongo_vars() {
   DOCKER_COMPOSE_FLAGS+=(-f "$TOOLKIT_ROOT/lib/docker-compose.mongo.yml")
 
   if [[ $MONGO_ENABLED == "true" && $IMAGE_VERSION_MAJOR -ge 4 ]]; then
-    MONGO_ARGS="--replSet overleaf"
+    MONGO_ARGS="--replSet rs0"
   else
     MONGO_ARGS=""
   fi
