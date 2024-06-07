@@ -7,7 +7,7 @@ PROJECT_NAME=overleaf
 # OVERLEAF_IMAGE_NAME=sharelatex/sharelatex
 OVERLEAF_DATA_PATH=/media/hanisntsolo/WDBlue_ssd_hanis/docker/volumes/sharelatex/data
 SERVER_PRO=false
-OVERLEAF_LISTEN_IP=127.0.0.1
+OVERLEAF_LISTEN_IP=0.0.0.0
 OVERLEAF_PORT=19080
 
 # Sibling Containers
